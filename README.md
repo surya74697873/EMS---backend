@@ -1,4 +1,9 @@
 
+Tech Stack : 
+1. Spring boot in ZohoCatalyst,
+2. Mysql in Clever Cloud
+
+   
 🚀 API Base URL
 https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees/
 
