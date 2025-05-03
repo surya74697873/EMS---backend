@@ -1,17 +1,27 @@
-Base URL of this app on zoho catalyst : https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees/
 
-dummy json : json.Stringfy({
-id : id,
-fullName : name,
-email : email,
-departmentName : ?,  Like [development, testing, technical support, etc..]
-branchName : ?   Like [chennai, madurai, coimbator, trichy, etc...]
-})
+🚀 API Base URL
+https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees/
 
-only postman work otherwise cors error will hit with frontend
+📦 Dummy JSON Payload (for POST/PUT)
+json
+Copy
+Edit
+{
+  "id": 1,
+  "fullName": "John Doe",
+  "email": "john.doe@example.com",
+  "departmentName": "Development",  // Options: Development, Testing, Technical Support, etc.
+  "branchName": "Chennai"          // Options: Chennai, Madurai, Coimbatore, Trichy, etc.
+}
+⚠️ Note: CORS error will occur if accessed from a frontend in browser. Use tools like Postman for testing.
 
-getAll - https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees/
-getbyId - https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees/{id}
-post - https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees/   with body
-put - https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees/{id}  with body
-delete - https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees/{id}
+🛠️ API Endpoints
+Method	Endpoint	Description
+GET	/	Get all employees
+GET	/{id}	Get employee by ID
+POST	/	Create a new employee (requires JSON body)
+PUT	/{id}	Update an existing employee by ID (requires JSON body)
+DELETE	/{id}	Delete an employee by ID
+
+Example for GET by ID:
+https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees/1
