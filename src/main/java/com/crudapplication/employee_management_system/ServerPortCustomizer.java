@@ -5,7 +5,7 @@ import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerF
 import org.springframework.stereotype.Component;
 
 @Component
-public class ServerPortCustomizer implements WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> {
+public class ServerPortCustomizer implements WebSerSverFactoryCustomizer<ConfigurableServletWebServerFactory> {
     @Override
     public void customize(ConfigurableServletWebServerFactory factory) {
         String port = System.getenv("X_ZOHO_CATALYST_LISTEN_PORT");
