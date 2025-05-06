@@ -11,13 +11,14 @@ public class WebConfig {
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                 
+            public void addCorsMappings( CorsRegistry registry) {
+                String url = "https://ems-frontend-psi-three.vercel.app";
+                // url = "http://localhost:8374/";
+
                 registry.addMapping("/**")
-                        .allowedOrigins("https://ems-frontend-psi-three.vercel.app")
+                        .allowedOrigins(url)
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*")
-                        .allowCredentials(true);
+                        .allowedHeaders("*");
                         
             }
         };
