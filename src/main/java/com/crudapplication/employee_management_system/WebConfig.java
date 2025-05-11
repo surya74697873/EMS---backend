@@ -12,8 +12,8 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings( CorsRegistry registry) {
-                String url = "https://ems-frontend-psi-three.vercel.app";
-                // url = "http://localhost:8374/";
+                
+                String url = "http://localhost:8374/";
 
                 registry.addMapping("/**")
                         .allowedOrigins(url)
