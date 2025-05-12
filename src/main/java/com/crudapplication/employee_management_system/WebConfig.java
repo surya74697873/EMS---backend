@@ -12,8 +12,8 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings( CorsRegistry registry) {
-                
-                String url = "http://localhost:8374/";
+                // http://localhost:8374/
+                String url = "https://ems-frontend-production-5581.up.railway.app/";
 
                 registry.addMapping("/**")
                         .allowedOrigins(url)
